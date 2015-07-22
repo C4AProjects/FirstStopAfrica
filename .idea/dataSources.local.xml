@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - yachiru@localhost" uuid="b31cafd2-fccf-4bc3-b54d-e65c949bd719">
+      <secret-storage>master_key</secret-storage>
+      <user-name>rufusmbugua</user-name>
+      <schema-pattern>yachiru.pg_catalog yachiru.public</schema-pattern>
+      <default-schemas>yachiru.pg_catalog yachiru.public</default-schemas>
+    </data-source>
+  </component>
+</project>
