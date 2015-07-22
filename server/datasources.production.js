@@ -19,8 +19,8 @@ module.exports = {
         "rejectUnauthorized": false
       },
       auth: {
-        user: process.env.EMAIL_USER || "firstop@gmail.com",
-        pass: process.env.EMAIL_PWD || "FirStop"
+        user: process.env.EMAIL_USER || "firstopapp@gmail.com",
+        pass: process.env.EMAIL_PWD || "FirStop456"
       }
     }]
   },
