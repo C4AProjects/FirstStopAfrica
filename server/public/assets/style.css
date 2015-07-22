@@ -39,15 +39,18 @@ h4{color: #eb9909;margin-bottom: 0.5em;font-size: 1.25em;}
 .carousel-inner > .item > img, .carousel-inner > .item > a > img{display: inline;width: 100%;}
 .carousel-control{background: none !important;width: 7%;}
 .carousel-control i{top: 50%;position: absolute;margin-top: -30px;color: #999;text-shadow: none;}
-
+/*
 .next-prev a{color: #f7f136;width: 50px; height: 50px;display: inline-block;float: left;text-align: center;line-height: 50px;margin-left: 1px;position: absolute;top:90%;margin-top: -25px;}
+*/
+.next-prev a{color: #f7f136;width: 50px; height: 50px;display: inline-block;float: left;text-align: center;line-height: 50px;margin-left: 1px;position:fixed;bottom: 220px;margin-top: -25px;}
 .next-prev a.left{left: 0; margin-left: 20px;}
 .next-prev a.right{right: 0; margin-right: 20px;}
 /*banner*/
 
-
+/*
 .caption{width: 100%;position: absolute;bottom: 0%;text-align: center;background: rgba(0,0,0,0.5);padding: 1.5em; padding-left:3.5em; padding-right:3.5em;}
 /*rgba(0,0,0,0.8)*/
+.caption{width: 100%;position: fixed;bottom: 16px;text-align: center;background: rgba(0,0,0,0.5);padding: 1.5em; padding-left:3.5em; padding-right:3.5em;}
 .caption h1{color: #fff;margin-bottom: 0.0em;font-size: 5em ;}
 .caption p{margin:0;line-height: 1.5em;font-size: 1.05em;color: #fff;font-family: monospace;}
 
