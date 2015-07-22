@@ -1,4 +1,4 @@
-body {	color:#333;	font:400 15px/15px Raleway,Arial,Helvetica;background:#eee; -webkit-font-smoothing:antialiased; background:#fff; }
+body {	color:#fff;	font:400 15px/15px Raleway,Arial,Helvetica;background:#eee; -webkit-font-smoothing:antialiased; background:#fff; }
 
 a{color:#00a9c6; text-decoration:none;}
 a:hover{color:#666;}
@@ -45,68 +45,25 @@ h4{color: #eb9909;margin-bottom: 0.5em;font-size: 1.25em;}
 .next-prev a.right{right: 0; margin-right: 20px;}
 /*banner*/
 
-/*intro*/
+
 .caption{width: 100%;position: absolute;bottom: 0%;text-align: center;background: rgba(0,0,0,0.5);padding: 1.5em; padding-left:3.5em; padding-right:3.5em;}
 /*rgba(0,0,0,0.8)*/
 .caption h1{color: #fff;margin-bottom: 0.0em;font-size: 5em ;}
 .caption p{margin:0;line-height: 1.5em;font-size: 1.05em;color: #fff;font-family: monospace;}
-/*intro*/
+
 /* yellow horizontal line*/
 .color-band{margin:0;height: 15px;color: #f7f136;background-color: #f7f136;border: none; }
 /* yellow horizontal line*/
 
 /*intro*/
-.intro{background: url(../images/bg2.png) center fixed repeat;position: relative; padding:3%;}
+.intro{background: url(../images/bg2.png) center fixed repeat;position: relative; padding:2%;}
 .intro .fullpage{background:rgba(0,0,0,0.7);}
 .intro .title{margin-bottom: 30px;}
-.intro p{font-size: 1.25em; color: #fff;line-height: 2em;}
+.intro p{font-size: 1.25em; color: #fff;line-height: 2em;margin:0;}
 .intro .anchor{position: absolute;bottom:20px;color: #fff;left: 50%; margin-left: -20px;}
 /*intro*/
 
 
-/*about*/
-.about{padding: 100px 0; }
-.about .panel-group .panel{border-radius: 0;border: none;}
-.about .panel-default > .panel-heading{border-radius: 0;padding: 0;background-color:#eee; }
-.panel-title{font-size: 1.35em;}
-.panel-title > a{display: block;padding:1.5em;}
-.panel-title > a:hover{text-decoration: none;background-color:#666;color: #fff;}
-.panel-default > .panel-heading + .panel-collapse > .panel-body{border:none;line-height: 1.5em;font-size: 1.15em;}
-.panel-body{padding:2em;background-color:#fff;}
-/*about*/
-
-/*gallery*/
-.gallery .product{position: relative;margin-bottom: 30px;}
-.gallery .product .overlay{opacity: 0;position: absolute;top: 0;right: 0;bottom: 0;left: 0;background:rgba(255,255,255,0.9);cursor: pointer;
--webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
--ms-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;}
-.gallery .product:hover .overlay{opacity: 1; }
-.gallery .product h3{color: #333;margin-bottom: 0.5em;}
-.gallery .product p{color: #666;font-weight: bold;}
-.gallery .product .btn{padding: 0.5em 1.5em;background-color: #333;color: #fff;text-shadow:none;}
-.gallery .product .btn:hover{background-color: #eb9909;color: #000;}
-/*gallery*/
-
-
-/*contact*/
-.contact{padding: 100px 0;color: #aaa;}
-.contact .btn{width: 100%;}
-#map{height: 400px;}
-/*contact*/
-
-/*footer*/
-.footer{background-color: #222; padding: 2em 0; color: #666;}
-.footer a{color: #aaa;}
-.footer .social{margin-bottom: 2em;}
-.footer .social a{color: #fff;font-size: 1em;margin-right: 10px;}
-
-/*footer*/
-
-.gototop{position: fixed;bottom: 20px; right: 20px;background: rgba(0,0,0,0.5);padding: 10px;color: #fff;}
-.gototop i{line-height: 0.5em;}
 
 @media (max-width: 900px) {
 	.caption h1{font-size: 2.5em}
