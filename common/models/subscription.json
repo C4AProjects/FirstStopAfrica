@@ -1,0 +1,30 @@
+{
+  "name": "Subscription",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "isMailSent": {
+      "type": "boolean"
+    },
+    "refererUrl": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date"
+    },
+    "lastUpdated": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

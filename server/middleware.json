@@ -1,0 +1,34 @@
+{
+  "initial:before": {
+    "loopback#favicon": {}
+  },
+  "initial": {
+    "compression": {},
+    "cors": {
+      "params": {
+        "origin": true,
+        "credentials": true,
+        "maxAge": 86400
+      }
+    }
+  },
+  "session": {},
+  "auth": {},
+  "parse": {
+    "cookie-parser":{"params":["gfhATWE*&()654fds", null]},
+    "body-parser#json": {},
+    "body-parser#urlencoded": {"params": { "extended": true }}
+  },
+  "routes": {},
+  "files": {
+    "loopback#static": {
+      "params": "$!./public"
+    }
+  },
+  "final": {
+    "loopback#urlNotFound": {}
+  },
+  "final:after": {
+    "errorhandler": {}
+  }
+}
