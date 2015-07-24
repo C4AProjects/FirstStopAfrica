@@ -15,7 +15,7 @@
   "session": {},
   "auth": {},
   "parse": {
-    "cookie-parser":{"params":["gfhATWE*&()654fds", null]},
+    "cookie-parser":{"params":["gfhATWE*&()654fds"]},
     "body-parser#json": {},
     "body-parser#urlencoded": {"params": { "extended": true }}
   },

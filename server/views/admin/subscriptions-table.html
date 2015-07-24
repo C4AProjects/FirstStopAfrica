@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+{% block stylesheet %}
+    {% parent %}
+    <!-- DataTables CSS -->
+    <link href="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="bower_components/datatables-tabletools/css/dataTables.tableTools.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+    
+    <style>
+        div.DTTT { margin-bottom: 0.5em; float: right; }
+        div.dataTables_wrapper { clear: both; }
+    </style>
+{% endblock %}
+{% block page-header %}
+Dashboard > Subscriptions
+{% endblock %}
+
+{% block content %}
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Emails
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="dataTable_wrapper">
+                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <thead>
+                            <tr>
+                                <th>Email</th>
+                                <th>Date</th>
+                                
+                            </tr>
+                        </thead>
+                        
+                    </table>
+                </div>
+                <!-- /.table-responsive -->
+                <div class="well">
+                    <h4></h4>
+                    <p></p>
+                    
+                </div>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+{% endblock %}
+
+{% block js %}
+    {% parent %}
+    <!-- DataTables JavaScript -->
+    <script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="bower_components/datatables-tabletools/js/dataTables.tableTools.js"></script>
+    <script src="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+    
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        
+        var table = $('#dataTables-example').DataTable({
+            stateSave: true,            
+            responsive: true,
+            "lengthMenu": [[50, 75, 100, -1], [50, 75, 100, "All"]],
+            "ajax": {
+                "url": "/api/Subscriptions",
+                "dataSrc": ""
+            },
+            "columns": [
+                { "data": "email" },
+                { "data": "created" }                    
+            ] 
+        });
+        
+        var tt = new $.fn.dataTable.TableTools( table, {"sSwfPath": "bower_components/datatables-tabletools/swf/copy_csv_xls_pdf.swf"} );
+        $( tt.fnContainer() ).insertBefore('div.dataTables_wrapper');
+    });
+    </script>
+{% endblock %}

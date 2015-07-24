@@ -3,6 +3,7 @@ var boot = require('loopback-boot');
 var path = require('path');
 //var bodyParser = require('body-parser');
 var swig = require('swig');
+
 var app = module.exports = loopback();
 
 // configure view handler
@@ -17,7 +18,8 @@ app.set('view cache', false);
 swig.setDefaults({ cache: false });
 //app.use(loopback.static(path.resolve(__dirname, 'public/')));
 //app.use(bodyParser.json({strict: false}));
-app.use(loopback.token());
+app.use(loopback.token({searchDefaultTokenKeys: true}));
+
 
 app.start = function() {
   // start the web server

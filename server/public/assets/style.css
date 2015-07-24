@@ -50,7 +50,7 @@ h4{color: #eb9909;margin-bottom: 0.5em;font-size: 1.25em;}
 /*
 .caption{width: 100%;position: absolute;bottom: 0%;text-align: center;background: rgba(0,0,0,0.5);padding: 1.5em; padding-left:3.5em; padding-right:3.5em;}
 /*rgba(0,0,0,0.8)*/
-.caption{width: 100%;position: fixed;bottom: 16px;text-align: center;background: rgba(0,0,0,0.5);padding: 1.5em; padding-left:3.5em; padding-right:3.5em;}
+.caption{width: 100%;position: fixed;bottom: 166px;text-align: center;background: rgba(0,0,0,0.5);padding: 1.5em; padding-left:3.5em; padding-right:3.5em;}
 .caption h1{color: #fff;margin-bottom: 0.0em;font-size: 5em ;}
 .caption p{margin:0;line-height: 1.5em;font-size: 1.05em;color: #fff;font-family: monospace;}
 
@@ -59,7 +59,7 @@ h4{color: #eb9909;margin-bottom: 0.5em;font-size: 1.25em;}
 /* yellow horizontal line*/
 
 /*intro*/
-.intro{background: url(../images/bg2.png) center fixed repeat;position: relative; padding:2%;}
+.intro{background: url(../images/bg2.png) center bottom fixed repeat;position: relative; padding:2%;}
 .intro .fullpage{background:rgba(0,0,0,0.7);}
 .intro .title{margin-bottom: 30px;}
 .intro p{font-size: 1.25em; color: #fff;line-height: 2em;margin:0;}
