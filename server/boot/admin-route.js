@@ -24,6 +24,9 @@ module.exports = function(server) {
            
         });
     });
+    router.post('/logout', function(req, res){
+        
+    });
     
     //admin home page
     router.get('/home/', function(req, res){
