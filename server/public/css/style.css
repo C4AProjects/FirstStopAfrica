@@ -1,0 +1,159 @@
+body {  
+    color:#f2f2f2;
+}
+p{
+    font-size: 1.6em;
+    line-height: 1.5em;
+}
+.logo-box{
+    display: block;
+    margin:5px;
+    position: absolute;
+    z-index: 10002;
+    right: 18%;
+    top: 10%;
+    background: url(../img/logo.png) no-repeat;
+    text-indent: -9999px;
+    width: 176px; height: 148px;
+}
+.second-box {
+    /*
+    position:absolute;
+    bottom:0px;
+    */
+    width:100%;
+    height:300px;
+    min-height: 33%;
+    min-height: 33vh;
+    margin:0px;
+}
+.footer-box {
+    background: url(../img/bg3.png) center bottom fixed no-repeat;
+    padding:2%;
+    display: table;height: 100%;width: 100%;
+}
+.table-center{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+    
+}
+.carousel{
+    margin:0px;
+    background-color: #fff;
+    z-index: 1000;
+    
+}
+.carousel-inner > .item{
+    text-align: right;
+    
+    max-height: 64.99%;
+    max-height: 64.99vh;
+    
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    display: inline;
+    width: 100%;
+    position:aboslute;
+    bottom:0px;
+    height:100%;
+}
+.caption{
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    margin:0;
+    padding: 15px; 
+    padding-left:30; 
+    padding-right:30px;
+    
+}
+.caption h1{
+    margin: 0.2em;
+    font-size: 5em;
+    
+}
+.caption p{
+    margin:0;
+    font-size: 1.6em;
+    line-height: 1.5em;
+}
+
+.next-prev a{
+    color: #f7f136;
+    width: 50px; 
+    height: 50px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 1px;
+    position: absolute;
+    bottom:10%;
+    margin-top: -25px;
+    
+}
+.next-prev a.left{left: 0; margin-left: 10px;}
+.next-prev a.right{right: 0; margin-right: 10px;}
+
+
+/* yellow horizontal line*/
+.color-band{
+    margin:0;
+    height: 15px;
+    color: #f7f136;
+    background-color: #f7f136;
+    border: none; 
+    
+}
+/* yellow horizontal line*/
+
+
+@media screen and (max-width: 900px) {
+    .caption h1{
+        font-size:2em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body{font-size: 13px; line-height: 13px;}
+    h1{font-size: 1.5em; line-height: 1.5em;}
+    p{font-size: 1em; line-height: 1em;}
+    .carousel-inner > .item{
+        
+        height: 50%;
+        height: 50vh;
+    }
+    .second-box{
+        
+        min-height: 48%;
+        min-height: 48vh;
+    }
+    
+    .logo-box{
+        top: 5%;
+        background: url(../img/logo-sm.png) no-repeat;
+        width: 100px; height: 84px;
+    }
+    .caption{
+        padding: 2px; 
+        padding-left:15px; 
+        padding-right:15px;
+    }
+    .caption h1{
+        font-size: 2em;
+    }
+    .caption p{
+        font-size:1em;
+    }
+    
+    .color-band{
+        height: 8px;
+    }
+    .next-prev {
+        display: none;
+    }
+}
