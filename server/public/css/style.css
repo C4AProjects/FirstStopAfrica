@@ -28,7 +28,7 @@ p{
     margin:0px;
 }
 .footer-box {
-    background: url(../img/bg3.png) center bottom fixed no-repeat;
+    background: url(../img/bg3.png) center bottom fixed repeat;
     padding:2%;
     display: table;height: 100%;width: 100%;
 }
