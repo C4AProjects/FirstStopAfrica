@@ -1,4 +1,5 @@
 module.exports = function(server) {
+    var Subscription = server.models.Subscription;
     var User = server.models.User;
     var router = server.loopback.Router();
     //admin login page
@@ -30,10 +31,16 @@ module.exports = function(server) {
     
     //admin home page
     router.get('/home/', function(req, res){
-        console.log(req.accessToken);
-        console.log(req.signedCookies);
+        
         if (!req.accessToken) return res.redirect('back');
-        res.render('admin/home');
+               
+        var s_count;
+        Subscription.count(function(err, count){
+            if (err) throw err;
+            res.render('admin/home', {subscriptions_count: count});
+        });
+        
+        
     });
     
     //subscriptions table page
