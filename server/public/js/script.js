@@ -1,5 +1,22 @@
- jQuery(document).ready(function($) {
- 
+jQuery(document).ready(function($) {
+//initializa toastr options
+toastr.options = {
+  "closeButton": false,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": false,
+  "positionClass": "toast-top-center",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "5000",
+  "extendedTimeOut": "1000",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+}
   
 // send data via ajax
 $('#subscription-form').submit( function(event){
@@ -17,7 +34,7 @@ $('#subscription-form').submit( function(event){
             success: function(data){
                 console.log(data);
                 if (data.accepted && data.accepted === true){
-                    toastr.info("Thank for your subscribing. We will contact you once we go live.");
+                    toastr.success("Thank for your subscribing. We will contact you once we go live.");
                     $('.form-group').addClass('has-success');
                     $('.subscription-message').html('You have been successfully registered to get updates from FirStop').fadeIn(1000);
                     
@@ -43,9 +60,10 @@ $('#subscription-form').submit( function(event){
         });
     }else {
         //show validation error
+        toastr.error('Incorrect email. Please enter valid email address.');
         $('.form-group').addClass('has-error');
-        $('.subscription-error').html('Incorrect email. Please enter valid email address').fadeIn(1000);
-        $('.subscription-success').fadeOut(500);
+        $('.subscription-message').html('Incorrect email. Please enter valid email address.').fadeIn(1000);
+        
     }
 });
 
