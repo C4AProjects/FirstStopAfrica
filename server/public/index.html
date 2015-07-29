@@ -14,6 +14,7 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -30,13 +31,46 @@
       <!-- slider -->
       
       <div id="carousel-banner" class="carousel slide" data-ride="carousel">
-        <a href="" class="logo-box">Logo</a>
+        <div class="social-icons">
+            <a href="http://www.pinterest.com/firststopafrica" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-pinterest-p fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+            <a href="https://www.facebook.com/pages/FirstStop-Africa-Inc/950466018325011" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+            <a href="https://twitter.com/FirstStopAfrica" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+            <a href="https://instagram.com/firststopafrica/" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+            <a href="https://www.linkedin.com/pub/firststop-africa/102/413/582" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+
+        </div>
+        <a href="" class="logo-box">FirStop</a>
         <div class="carousel-inner" role="listbox">
             <div class="item active"><img src="img/banner1.jpg" class="img-responsive">
                 <!-- caption -->
                 <div class="caption">
                 <h1>We're in Flight &amp; Arriving Soon!</h1>
-                <p>Your First Stop for Inspiration by the latest news, trends, reviews in African Travel and Lifestyle
+                <p>Your First Stop for Inspiration by the latest trends, news and reviews in Pan African Culture and Travel
                 </p>   
                 </div>
                 <!-- caption -->
@@ -45,7 +79,7 @@
                 <!-- caption -->
                 <div class="caption">
                 <h1>We're in Flight &amp; Arriving Soon!</h1>
-                <p>Your First Stop for Inspiration by the latest news, trends, reviews in African Travel and Lifestyle
+                <p>Your First Stop for Inspiration by the latest trends, news and reviews in Pan African Culture and Travel
                 </p>   
                 </div>
                 <!-- caption -->
@@ -54,7 +88,7 @@
                 <!-- caption -->
                 <div class="caption">
                 <h1>We're in Flight &amp; Arriving Soon!</h1>
-                <p>Your First Stop for Inspiration by the latest news, trends, reviews in African Travel and Lifestyle
+                <p>Your First Stop for Inspiration by the latest trends, news and reviews in Pan African Culture and Travel
                 </p>   
                 </div>
                 <!-- caption -->
@@ -78,10 +112,14 @@
                 <p class="subscription-message"></p>
                 
                 <div class="form-group">
-                    <label class="sr-only" for="email">Email address</label>                    
-                    <input type="email" class="form-control input-lg" id="email" placeholder="Enter your email">                                                          
+                    <label class="sr-only" for="name">Name</label>                    
+                    <input required type="text" class="form-control input-lg" id="name" placeholder="Enter your name">                                                          
                 </div>
-                
+                <div class="form-group">
+                    <label class="sr-only" for="">Email address</label>                    
+                    <input required type="email" class="form-control input-lg" id="email" placeholder="Enter your email">                                                          
+                </div>
+                <div class="hidden-xs"><br></div>
                 <button type="submit" class="btn btn-lg btn-primary"><i class="glyphicon glyphicon-envelope"></i> &nbsp;Subscribe</button>             
                
             </form>

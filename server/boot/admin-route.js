@@ -34,9 +34,10 @@ module.exports = function(server) {
         
         if (!req.accessToken) return res.redirect('back');
                
-        var s_count;
+       
         Subscription.count(function(err, count){
             if (err) throw err;
+            console.log(req.signedCookies);
             res.render('admin/home', {subscriptions_count: count});
         });
         

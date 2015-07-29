@@ -5,6 +5,18 @@ p{
     font-size: 1.6em;
     line-height: 1.5em;
 }
+.social-icons{
+    margin:5px;
+    z-index: 10002;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: auto; height: auto;
+}
+.social-icons a{
+    text-decoration:none;
+    color: #090909;
+}
 .logo-box{
     display: block;
     margin:5px;
@@ -22,16 +34,20 @@ p{
     bottom:0px;
     */
     width:100%;
-    height:300px;
-    min-height: 33%;
-    min-height: 33vh;
+    height:200px;
+    min-height: 27%;
+    min-height: 27vh;
     margin:0px;
 }
 .footer-box {
-    background: url(../img/bg3.png) center bottom fixed repeat;
-    padding:2%;
+    background: url(../img/bg4.png) center bottom fixed repeat;
+    padding:1.65%;
     display: table;height: 100%;width: 100%;
 }
+.footer-box p {
+    margin: 0 0 3px;
+}
+
 .table-center{
     display: table-cell;
     vertical-align: middle;
@@ -48,8 +64,8 @@ p{
 .carousel-inner > .item{
     text-align: right;
     
-    max-height: 64.99%;
-    max-height: 64.99vh;
+    max-height: 70.99%;
+    max-height: 70.99vh;
     
 }
 .carousel-inner > .item > img, .carousel-inner > .item > a > img{
@@ -132,9 +148,14 @@ p{
         min-height: 48%;
         min-height: 48vh;
     }
+    .footer-box {
+        background: url(../img/bg-sm.png) top right fixed repeat;
+    }
+    
     
     .logo-box{
         top: 5%;
+        right: 10%;
         background: url(../img/logo-sm.png) no-repeat;
         width: 100px; height: 84px;
     }

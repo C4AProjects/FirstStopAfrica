@@ -15,7 +15,7 @@ module.exports = function(server) {
             subject: 'FirStop Updates Subscription',
             text: ['Hello Dear,', '', 
             'You have been successfully subscribed to get updates from FirStop.',
-            'Seen you soon.', '', 'FirStop Team'].join('\n')
+            'See you soon.', '', 'FirStop Team'].join('\n')
         };
         //see nodemailer callback function(https://github.com/andris9/Nodemailer)
         Email.send(options, function(err, info){
@@ -41,13 +41,13 @@ module.exports = function(server) {
         Subscription = server.models.Subscription;
         console.log(req.body);
         data = {
-            email: req.body.email,
-            refererUrl: req.headers.referer
+            email: req.body.email,            
+            name: req.body.name
         };
         cb = function(err, model){
             if(err) {
                 console.log(err);
-                res.json({accepted:false, error:"internal error:save"});
+                res.json({accepted:false, error:"internal error:find"});
                 
             }
             if (model === null){
@@ -57,6 +57,7 @@ module.exports = function(server) {
                     if (models) {sendEmail(models, res);}
                     else {
                         console.log('Null value.Cannot create model into DB.');
+                        res.json({accepted:false, error:"internal error:create"});
                     }
                 });
             }

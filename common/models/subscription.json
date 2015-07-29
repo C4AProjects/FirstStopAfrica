@@ -13,9 +13,10 @@
     "isMailSent": {
       "type": "boolean"
     },
-    "refererUrl": {
-      "type": "string"
-    },
+    "name": {
+      "type": "string",
+      "required": true
+    },    
     "created": {
       "type": "date"
     },
