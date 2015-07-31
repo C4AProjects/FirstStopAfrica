@@ -10,12 +10,18 @@ module.exports = function(server) {
     var sendEmail = function(model, res){
         //send email
         options = {
-            from: fromEmailAddress,
+            from: 'FirstStopAfrica ✔ <'+fromEmailAddress+'>',
             to: model.email,
             subject: 'FirStop Updates Subscription',
-            text: ['Hello Dear,', '', 
-            'You have been successfully subscribed to get updates from FirStop.',
-            'See you soon.', '', 'FirStop Team'].join('\n')
+            text: ['Hello '+model.name+',', '', '','',
+            "Welcome and Thank you for signing up for FirstStop Africa's E-News!",'',
+            'We are currently in flight and preparing to arrive with our premiere Pan-African digital publication inspiring travel and cultural tourism to Africa and countries of the Diaspora.','','','',
+            'You will be one of the first to know of our upcoming digital launch! We are all so excited here and are even more thrilled that you are now part of FirstStop Africa’s amazing community as we, together, partake on this amazing journey “home”.','','','',
+            'Staying informed is the your first step to your FirstStop in Africa by receiving  the latest in Pan-African cultural news,  trends, ideas, tips  and inspiration for travel and more. So tell a friend to tell a friend and support our Online Community — Facebook, Twitter, Instagram, Pinterest and LinkedIN!','','','',
+            'Once again, thank you for your support and we will be in touch with you soon as we prepare to land!','','','',
+            'Sincerely,','','','',
+            'Team FirstStop Africa'
+            ].join('\n')
         };
         //see nodemailer callback function(https://github.com/andris9/Nodemailer)
         Email.send(options, function(err, info){

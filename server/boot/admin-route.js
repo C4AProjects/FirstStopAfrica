@@ -25,8 +25,9 @@ module.exports = function(server) {
            
         });
     });
-    router.post('/logout', function(req, res){
-        
+    router.get('/logout', function(req, res){
+        //delete access token
+        res.redirect('login');
     });
     
     //admin home page
