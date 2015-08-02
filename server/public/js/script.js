@@ -49,7 +49,7 @@ $('#subscription-form').submit( function(event){
                     .removeClass('text-danger')
                     .removeClass('text-warning')
                     .addClass('text-success')
-                    .html('You have been successfully registered to get updates from FirStop')
+                    .html('You have been successfully registered to get updates from FirstStop Africa')
                     .fadeIn(1000);
                     
                 }else if (data.exists && data.exists === true){
@@ -65,7 +65,7 @@ $('#subscription-form').submit( function(event){
                     .fadeIn(1000);
                     
                 } else {
-                    toastr.warning('Incorrect email. Please make sure this is a working email address');
+                    toastr.warning('Incorrect email. Please make sure this is a working email address.');
                     $('.form-group')
                     .removeClass('has-success')
                     .addClass('has-error');
@@ -73,7 +73,7 @@ $('#subscription-form').submit( function(event){
                     .removeClass('text-success')
                     .removeClass('text-warning')
                     .addClass('text-danger')
-                    .html('Incorrect email. Please make sure this is a working email address')
+                    .html('Incorrect email. Please make sure this is a working email address.')
                     .fadeIn(1000);
                     
                 }

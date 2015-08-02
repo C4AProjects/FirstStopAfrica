@@ -10,9 +10,9 @@ module.exports = function(server) {
     var sendEmail = function(model, res){
         //send email
         options = {
-            from: 'FirstStopAfrica ✔ <'+fromEmailAddress+'>',
+            from: 'FirstStop Africa <'+fromEmailAddress+'>',
             to: model.email,
-            subject: 'FirStop Updates Subscription',
+            subject: 'FirstStop Africa Updates Subscription. Thank You for Subscribing !',
             text: ['Hello '+model.name+',', '', '','',
             "Welcome and Thank you for signing up for FirstStop Africa's E-News!",'',
             'We are currently in flight and preparing to arrive with our premiere Pan-African digital publication inspiring travel and cultural tourism to Africa and countries of the Diaspora.','','','',
